@@ -23,62 +23,66 @@
 
     <!-- Navbar use bg-primary-subtle (use bg-transparent for image(change when scroll) in future)-->
     <nav class="navbar navbar-expand-lg bg-primary-subtle sticky-top">
-        <div class="container-fluid">
+      <div class="container-fluid">
           <!-- Brand -->
           <a class="navbar-brand" href="#"><img src="assets/OttaOtta.png" alt="OttaOtta" width="100" height="30"></a>
-
-          <!-- collapse for small screen-->
+  
+          <!-- Collapse button for small screens -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon"></span>
           </button>
-
-          <div class="collapse navbar-collapse " id="navbarSupportedContent">
-            <!-- Left side (icons requried)-->
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link fs-5" href="#">Live</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fs-5" href="#">Shorts</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fs-5" href="#">Trending</a>
-              </li>
-            </ul>
-
-            <!-- Search bar -->
-            <div class="col-12 col-lg-6 mx-auto">
-              <div class="input-group">
-                <input type="text" class="form-control" placeholder="Find what you want" />
-                <button type="button" class="btn btn-primary" data-mdb-ripple-init>
-                  <i class="bi bi-search"></i>
-                </button>
-             </div>
-            </div>
-            
-
-            <!-- Right side (toolkit for notice requried) -->
-            <ul class="navbar-nav me-3">
-              <li class="nav-item">
-                <a class="nav-link fs-5" href="#"><i class="bi bi-person-circle" > Profile</i></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fs-5" href="#">Messages<span class="badge bg-info">4</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fs-5" href="#">History</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fs-5" href="#">Collection</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fs-5" href="#">Subscriptions</a>
-              </li>
-            </ul>
-            <button class="btn btn-primary ms-2 fs-5" type="button">Upload</button>
+  
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <!-- Left side links -->
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link fs-5" href="#">Live</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link fs-5" href="#">Shorts</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link fs-5" href="#">Trending</a>
+                  </li>
+              </ul>
+  
+              <!-- Search bar -->
+              <div class="col-12 col-lg-6 mx-auto">
+                  <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Find what you want" aria-label="Search" />
+                      <button type="button" class="btn btn-primary" data-mdb-ripple-init>
+                          <i class="bi bi-search"></i>
+                      </button>
+                  </div>
+              </div>
+  
+              <!-- Right side links -->
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link fs-5" href="#"><i class="bi bi-person-circle"></i> Profile</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link fs-5" href="#">Messages <span class="badge bg-info">4</span></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link fs-5" href="#">History</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link fs-5" href="#">Collection</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link fs-5" href="#">Subscriptions</a>
+                  </li>
+              </ul>
+  
+              <!-- Upload button -->
+              <a href="../user/upload.html">
+                  <button class="btn btn-primary fs-5" type="button">Upload</button>
+              </a>
           </div>
-        </div>
-      </nav>
+      </div>
+  </nav>
+  
     
     <!-- body sections-->
     <!-- Header image (need higher resolution one) -->

@@ -1,23 +1,28 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
-import videoData from '../videoData'; 
+import VideoWindow from './VideoWindow';
+import Comments from './VideoPageComments';
+import AccountInfo from './AccountInfo.js';
+import Recommendations from './Recommendations';
+import videoData from '../datas/videoData';
 
-function VideoPage() { 
-  const { title } = useParams();
-  const decodedTitle = decodeURIComponent(title); // Decode the title
-
-  // Logic to fetch video details based on the decoded title
-  const video = videoData.find(v => v.title === decodedTitle);
-
-  if (!video) {
-    return <div><p>Video not found</p></div>;
-  }
+function VideoPage() {
+  const video = videoData[0]; // Assuming the first video is the main one to display
 
   return (
-    <div>
-      <h1>{video.title}</h1>
-      
-      {/* Add more details about the video here */}
+    <div className="container-xxxl mt-3">
+      <div className="row">
+        {/* Video and Comments Section */}
+        <div className="col-9 text-left">
+          <VideoWindow video={video} />
+          <Comments />
+        </div>
+
+        {/* Account Info and Recommendations Section */}
+        <div className="col-3">
+          <AccountInfo />
+          <Recommendations />
+        </div>
+      </div>
     </div>
   );
 }

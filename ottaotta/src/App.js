@@ -15,8 +15,10 @@ function App() {
         <Routes>
           {/* Home page */}
           <Route path="/" element={<HomePage />} />
+
           {/* VideoPage */}
           <Route path="/video/:title" element={<VideoPage />} />
+          
           {/* Other routes can be added here */}
         </Routes>
       </div>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import FilterBar from './components/FilterBar';
 import ContentSection from './components/HomeContent';
-import videoData from './videoData';
+import videoData from './datas/videoData';
 import HeaderImage from './components/HeaderImage';
 
 const HomePage = () => {

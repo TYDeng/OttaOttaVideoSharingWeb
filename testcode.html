@@ -2,51 +2,173 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap 5 Side Tabs Example</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Destiny 2: The Final Shape | Launch Trailer</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      /* A larger container for line up the videos*/
+      .container-xxxl {
+        max-width: 1700px; /* Adjust this width as needed */
+      padding-right: var(--bs-gutter-x, 1.5rem);
+      padding-left: var(--bs-gutter-x, 1.5rem);
+      margin-right: auto;
+      margin-left: auto; 
+      }
+    </style>
 </head>
 <body>
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-md-3">
-                <!-- Nav tabs -->
-                <nav class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <a class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
-                    <a class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
-                    <a class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</a>
-                    <a class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a>
-                </nav>
+    <!-- Navbar-->
+    <nav class="navbar navbar-expand-lg bg-primary-subtle sticky-top">
+      <div class="container-fluid">
+        <!-- Brand -->
+        <a class="navbar-brand" href="../index.html"><img src="../assets/OttaOtta.png" alt="OttaOtta" width="100" height="30"></a>
+
+        <!-- collapse for small screen-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            
+          <p class="fs-5 d-flex">My channel</p>
+          <!-- Search bar -->
+          <div class="col-12 col-lg-6 mx-auto">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search across your channel" />
+              <button type="button" class="btn btn-primary" data-mdb-ripple-init>
+                <i class="bi bi-search"></i>
+              </button>
+           </div>
+          </div>
+          
+          <!-- Right side (toolkit for notice requried) -->
+          <ul class="navbar-nav me-3">
+            <li class="nav-item">
+              <a class="nav-link fs-5" href="#">Messages<span class="badge bg-info">4</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-5" href="#">Help</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-5" href="#">Setting</a>
+            </li>
+          </ul>
+          <a href="#" class="nav-link" title="destiny2">
+            <img src="../assets/user.png" alt="User" width="43" height="40">
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main content -->
+    <section id="main">
+        <div class="container-xxxl">
+          <div class="row">
+            <!-- left side -->
+            <div class="col-3">
+                <div class="d-flex flex-column pt-5 bg-light" style="height: 100vh;">
+                  <!-- Account header -->
+                  <div class="row align-items-center justify-content-center d-flex">
+                    <div class="d-flex flex-column align-items-center">
+                        <img src="../assets/user.png" alt="account" width="90" height="90">
+                        <h2 class="mt-2">User name</h2>
+                    </div>
+                  </div>
+                  <div class="align-items-center justify-content-center d-flex flex-column">
+                    <a href="#pills-upload" data-bs-toggle="pill" role="tab" aria-controls="pills-upload" aria-selected="false">
+                        <button class="btn btn-primary fs-5 mt-3 pd-4" type="button">Upload your video</button>
+                    </a>
+                  </div>
+
+                    <hr>
+                    <ul class="nav nav-pills flex-column pt-3" id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link link-dark active" id="pills-home-tab" data-bs-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-dark" id="pills-content-tab" data-bs-toggle="pill" href="#pills-content" role="tab" aria-controls="pills-content" aria-selected="false">Content</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-dark" id="pills-analytics-tab" data-bs-toggle="pill" href="#pills-analytics" role="tab" aria-controls="pills-analytics" aria-selected="false">Analytics</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-dark" id="pills-comments-tab" data-bs-toggle="pill" href="#pills-comments" role="tab" aria-controls="pills-comments" aria-selected="false">Comments</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-dark" id="pills-copyright-tab" data-bs-toggle="pill" href="#pills-copyright" role="tab" aria-controls="pills-copyright" aria-selected="false">Copyright</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-dark" id="pills-earn-tab" data-bs-toggle="pill" href="#pills-earn" role="tab" aria-controls="pills-earn" aria-selected="false">Earn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-dark" id="pills-feedback-tab" data-bs-toggle="pill" href="#pills-feedback" role="tab" aria-controls="pills-feedback" aria-selected="false">Send us feedback</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-md-9">
-                <!-- Tab panes -->
-                <div class="tab-content" id="v-pills-tabContent">
-                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                        <h3>Home</h3>
-                        <p>Content for Home tab.</p>
+            <div class="col-9">
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <h1>Home</h1>
+                        <p>Welcome to the home tab content.</p>
                     </div>
-                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                        <h3>Profile</h3>
-                        <p>Content for Profile tab.</p>
+                    <div class="tab-pane fade" id="pills-content" role="tabpanel" aria-labelledby="pills-content-tab">
+                        <h1>Content</h1>
+                        <p>Manage your content here.</p>
                     </div>
-                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                        <h3>Messages</h3>
-                        <p>Content for Messages tab.</p>
+                    <div class="tab-pane fade" id="pills-analytics" role="tabpanel" aria-labelledby="pills-analytics-tab">
+                        <h1>Analytics</h1>
+                        <p>View your analytics here.</p>
                     </div>
-                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-                        <h3>Settings</h3>
-                        <p>Content for Settings tab.</p>
+                    <div class="tab-pane fade" id="pills-comments" role="tabpanel" aria-labelledby="pills-comments-tab">
+                        <h1>Comments</h1>
+                        <p>Manage your comments here.</p>
+                    </div>
+                    <div class="tab-pane fade" id="pills-copyright" role="tabpanel" aria-labelledby="pills-copyright-tab">
+                        <h1>Copyright</h1>
+                        <p>Manage your copyright issues here.</p>
+                    </div>
+                    <div class="tab-pane fade" id="pills-earn" role="tabpanel" aria-labelledby="pills-earn-tab">
+                        <h1>Earn</h1>
+                        <p>Manage your earnings here.</p>
+                    </div>
+                    <div class="tab-pane fade" id="pills-feedback" role="tabpanel" aria-labelledby="pills-feedback-tab">
+                        <h1>Send us feedback</h1>
+                        <p>Send us your feedback here.</p>
+                    </div>
+                    <div class="tab-pane fade" id="pills-upload" role="tabpanel" aria-labelledby="pills-upload-tab">
+                        <header class="d-flex justify-content-between align-items-center pt-5 mb-4 border-bottom pt-3">
+                            <h1>Upload videos</h1>
+                        </header>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Post on: 2024-06-25 5PM</h5>
+                                <div class="text-center">
+                                    <div class="mb-3">
+                                        <i class="bi bi-cloud-arrow-up" style="font-size: 48px;"></i>
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="file" class="form-control">
+                                    </div>
+                                    <p>Current review queue: Fast</p>
+                                    <p>Estimated review completion time: Within 10 minutes</p>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="mt-4">
+                            <p>By submitting your videos to YouTube, you acknowledge that you agree to YouTube's <a href="#" class="text-decoration-none">Terms of Service</a> and <a href="#" class="text-decoration-none">Community Guidelines</a>. Please be sure not to violate others' copyright or privacy rights.</p>
+                        </footer>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <!-- Bootstrap JS -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+        </div>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybBogGzOgQpeKBwK3Pee6t6/7pU2yZj6GOeqlr2HlK6Aq1zkg" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-6mxjYGRsEBI1Qks6I9yJ3TY1LEeqk8rO9Pfrwhbu1cI5F7AYy0GQ47C/LQz4vrsE" crossorigin="anonymous"></script>
 </body>
 </html>

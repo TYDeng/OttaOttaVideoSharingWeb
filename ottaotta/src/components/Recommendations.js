@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import videoData from './videoData'; // Assuming the videoData is imported correctly
+import videoData from '../datas/videoData'; // Assuming the videoData is imported correctly
+import { Link } from 'react-router-dom';
 
-// needs filters work
+// needs filters work, additional RecommandationVideocard.js
 function Recommendations() {
   return (
     <div className="pt-2 mt-3 border-top">
@@ -11,14 +12,14 @@ function Recommendations() {
       {videoData.slice(1).map((video, index) => (
         <div className="row mb-2" key={index}>
           <div className="col-5">
-            <a href="#" className="nav-link" title={video.title}>
+            <Link to={`/video/${encodeURIComponent(video.title)}`} className="nav-link" title={video.title}>
               <img src={video.imgSrc} className="card-img-top" alt={video.title} />
-            </a>
+            </Link>
           </div>
           <div className="col-7" style={{ fontSize: 'smaller' }}>
-            <a href="#" className="nav-link" title={video.title}>
+            <Link to={`/video/${encodeURIComponent(video.title)}`} className="nav-link" title={video.title}>
               <h6>{video.title}</h6>
-            </a>
+            </Link>
             <p>{`${video.profileTitle} ${video.views} views || ${video.time}`}</p>
           </div>
         </div>

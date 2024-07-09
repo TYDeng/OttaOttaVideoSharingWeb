@@ -19,6 +19,9 @@ function App() {
           {/* VideoPage */}
           <Route path="/video/:title" element={<VideoPage />} />
           
+          {/* userPage */}
+          <Route path="/user/:title" element={<VideoPage />} />
+          
           {/* Other routes can be added here */}
         </Routes>
       </div>

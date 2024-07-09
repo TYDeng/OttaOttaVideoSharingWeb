@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
@@ -9,7 +8,7 @@ function VideoWindow({ video }) {
     }
 
     return (
-        <div className="mb-4">
+        <div className="mb-4 mt-3">
             {/* VideoTitle */}
             <h3>{video.title}</h3>
             <p className="fs-6">{`${video.views} views || ${video.comments} comments || ${video.time}`}</p>

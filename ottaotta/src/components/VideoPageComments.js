@@ -1,15 +1,17 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import user from '../assets/user.png';
+import JG from '../assets/User-James Gouse.png';
 
 // just text, function lack
 function Comments() {
   return (
-    <div className="mt-3 pt-2">
+    <div className="mt-3 p-2">
       <h5>Comments 7345</h5>
       <div className="row">
         <div className="input-group">
-          <img src="../assets/user.png" alt="user" width="40" height="40" />
+          <img src={user} alt="user" width="40" height="40" />
           <input type="text" className="form-control ms-3" placeholder="Add a comment..." />
           <button type="button" className="btn btn-primary" data-mdb-ripple-init>
             <i className="bi bi-send"></i>
@@ -19,7 +21,7 @@ function Comments() {
       <div className="row mt-3">
         <div className="col-auto">
           <a href="#" className="nav-link" title="JG">
-            <img src="../assets/User-James Gouse.png" alt="JG" width="40" height="40" />
+            <img src={JG} alt="JG" width="40" height="40" />
           </a>
         </div>
         <div className="col pb-2 border-bottom">

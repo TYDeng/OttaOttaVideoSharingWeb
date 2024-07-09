@@ -12,13 +12,13 @@ function VideoPage() {
     <div className="container-xxxl mt-3">
       <div className="row">
         {/* Video and Comments Section */}
-        <div className="col-9 text-left">
+        <div className="col-9 text-start">
           <VideoWindow video={video} />
           <Comments />
         </div>
 
         {/* Account Info and Recommendations Section */}
-        <div className="col-3">
+        <div className="col-3 text-start">
           <AccountInfo />
           <Recommendations />
         </div>

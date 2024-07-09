@@ -1,6 +1,6 @@
 // src/components/HeaderImage.js
 import React from 'react';
-import homeImage from '../assets/images/home.jpg';
+import homeImage from '../assets/home.jpg';
 
 function HeaderImage() {
   return (

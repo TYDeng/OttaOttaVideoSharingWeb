@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import logo from '../assets/images/OttaOtta.png';
+import logo from '../assets/OttaOtta.png';
 
 function Navbar() {
   return (

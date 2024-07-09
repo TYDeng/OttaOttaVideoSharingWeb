@@ -1,7 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import videoData from '../datas/videoData'; // Assuming the videoData is imported correctly
+import videoData from '../datas/videoData';
 import { Link } from 'react-router-dom';
 
 // needs filters work, additional RecommandationVideocard.js
@@ -10,7 +9,7 @@ function Recommendations() {
     <div className="pt-2 mt-3 border-top">
       <h5>Recommendations:</h5>
       {videoData.slice(1).map((video, index) => (
-        <div className="row mb-2" key={index}>
+        <div className="row mb-2 pt-1" key={index}>
           <div className="col-5">
             <Link to={`/video/${encodeURIComponent(video.title)}`} className="nav-link" title={video.title}>
               <img src={video.imgSrc} className="card-img-top" alt={video.title} />
@@ -28,20 +27,5 @@ function Recommendations() {
   );
 }
 
-Recommendations.propTypes = {
-  videoData: PropTypes.arrayOf(
-    PropTypes.shape({
-      title: PropTypes.string.isRequired,
-      views: PropTypes.string.isRequired,
-      comments: PropTypes.string.isRequired,
-      time: PropTypes.string.isRequired,
-      imgSrc: PropTypes.string.isRequired,
-      profileImgSrc: PropTypes.string.isRequired,
-      profileTitle: PropTypes.string.isRequired,
-      category: PropTypes.string.isRequired,
-      likes: PropTypes.string // Assuming likes might be a property in the future
-    })
-  )
-};
 
 export default Recommendations;

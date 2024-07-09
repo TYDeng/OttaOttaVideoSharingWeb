@@ -1,5 +1,5 @@
-import video1 from '../assets/images/video1.webp';
-import destiny2 from '../assets/images/destiny2.png';
+import video1 from '../assets/video1.webp';
+import destiny2 from '../assets/destiny2.png';
 
 const videoData = [
   {

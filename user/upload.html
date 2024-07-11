@@ -21,47 +21,53 @@
 </head>
 <body>
     <!-- Navbar-->
-    <nav class="navbar navbar-expand-lg bg-primary-subtle sticky-top">
-      <div class="container-fluid">
-        <!-- Brand -->
-        <a class="navbar-brand" href="../index.html"><img src="../assets/OttaOtta.png" alt="OttaOtta" width="100" height="30"></a>
+<nav class="navbar navbar-expand-lg bg-primary-subtle sticky-top">
+  <div class="container-fluid">
 
-        <!-- collapse for small screen-->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <div class="collapse navbar-collapse " id="navbarSupportedContent">
-            
-          <p class="fs-5 d-flex">My channel</p>
-          <!-- Search bar -->
-          <div class="col-12 col-lg-6 mx-auto">
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Search across your channel" />
-              <button type="button" class="btn btn-primary" data-mdb-ripple-init>
-                <i class="bi bi-search"></i>
-              </button>
-           </div>
-          </div>
-          
-          <!-- Right side (toolkit for notice requried) -->
-          <ul class="navbar-nav me-3">
-            <li class="nav-item">
-              <a class="nav-link fs-5" href="#">Messages<span class="badge bg-info">4</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fs-5" href="#">Help</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fs-5" href="#">Setting</a>
-            </li>
-          </ul>
-          <a href="#" class="nav-link" title="destiny2">
-            <img src="../assets/user.png" alt="User" width="43" height="40">
+    <!-- Collapse button for small screens -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="d-flex justify-content-between align-items-center w-100">
+        <!-- Left side: Brand and Text -->
+        <div class="d-flex align-items-center">
+          <a class="navbar-brand" href="../index.html">
+            <img src="../assets/OttaOtta.png" alt="OttaOtta" width="100" height="30">
           </a>
+          <p class="fs-5 mb-0 ms-3">Wecome to the channel</p>
         </div>
+
+        <!-- Search bar -->
+        <div class="col-12 col-lg-6 mx-lg-auto my-2 my-lg-0">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search across the channel" />
+            <button type="button" class="btn btn-primary">
+              <i class="bi bi-search"></i>
+            </button>
+          </div>
+        </div>
+        
+        <!-- Right side: toolkit for notices -->
+        <ul class="navbar-nav d-flex align-items-center">
+          <li class="nav-item">
+            <a class="nav-link fs-5" href="#">Messages<span class="badge bg-info ms-1">4</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-5" href="#">Help</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-5" href="#">Setting</a>
+          </li>
+        </ul>
+        <a href="#" class="nav-link p-0 ms-3" title="destiny2">
+          <img src="../assets/user.png" alt="User" width="43" height="40">
+        </a>
       </div>
-    </nav>
+    </div>
+  </div>
+</nav>
 
     <!-- Main content -->
     <section id="main">

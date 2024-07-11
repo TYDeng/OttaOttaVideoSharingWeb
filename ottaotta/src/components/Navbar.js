@@ -1,10 +1,11 @@
 // src/components/Navbar.js
+// Navbar used for the homepage and videopage navigation
 import React from 'react';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import logo from '../assets/OttaOtta.png';
-
+import user from '../assets/user.png';
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg bg-primary-subtle sticky-top">
@@ -34,7 +35,7 @@ function Navbar() {
           </ul>
 
           {/* Search bar */}
-          <div className="col-12 col-lg-6 mx-auto">
+          <div className="col-12 col-lg-6 mx-lg-auto my-2 my-lg-0 justify-content-center">
             <div className="input-group">
               <input type="text" className="form-control" placeholder="Find what you want" aria-label="Search" />
               <button type="button" className="btn btn-primary" data-mdb-ripple-init>
@@ -44,15 +45,14 @@ function Navbar() {
           </div>
 
           {/* Right side links */}
-          <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+          <ul className="navbar-nav d-flex align-items-center">
             <li className="nav-item">
-              <Link className="nav-link fs-5" to="/profile"><i className="bi bi-person-circle"></i> Profile</Link>
+              <Link to="/account/user" className="nav-link p-0 me-1" title="user">
+                <img src={user} alt="User" width="35" height="35" />
+              </Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link fs-5" to="/messages">Messages <span className="badge bg-info">4</span></Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link fs-5" to="/history">History</Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link fs-5" to="/collection">Collection</Link>
@@ -63,9 +63,12 @@ function Navbar() {
           </ul>
 
           {/* Upload button */}
-          <Link to="/upload">
-            <button className="btn btn-primary fs-5" type="button">Upload</button>
+          <Link to="/account/user">
+            <button className="btn btn-primary fs-5" type="button">
+              Upload
+            </button>
           </Link>
+
         </div>
       </div>
     </nav>

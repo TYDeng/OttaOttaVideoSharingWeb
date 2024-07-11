@@ -1,4 +1,6 @@
+//HomePage of the website(index)
 import React, { useState } from 'react';
+import Navbar from './components/Navbar';
 import FilterBar from './components/FilterBar';
 import ContentSection from './components/HomeContent';
 import videoData from './datas/videoData';
@@ -38,6 +40,7 @@ const HomePage = () => {
 
   return (
     <div>
+      <Navbar />
       <HeaderImage />
       <FilterBar onFilterChange={handleFilterChange} onSortChange={handleSortChange} />
       <ContentSection videos={getFilteredVideos()} />

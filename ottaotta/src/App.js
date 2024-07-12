@@ -15,7 +15,7 @@ function App() {
       <div className="App">
         <Routes>
           {/* Home page */}
-          <Route path="/" element={<HomePage />} />
+          <Route path="/OttaOttaVideoSharingWeb" element={<HomePage />} />
 
           {/* VideoPage */}
           <Route path="/video/:title" element={<VideoPage />} />

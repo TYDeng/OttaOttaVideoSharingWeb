@@ -11,11 +11,11 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/OttaOttaVideoSharingWeb">
       <div className="App">
         <Routes>
           {/* Home page */}
-          <Route path="/OttaOttaVideoSharingWeb/" element={<HomePage />} />
+          <Route path="/" element={<HomePage />} />
 
           {/* VideoPage */}
           <Route path="/video/:title" element={<VideoPage />} />

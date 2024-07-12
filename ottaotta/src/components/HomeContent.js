@@ -12,7 +12,7 @@ function ContentSection({ videos }) {
 
   return (
     <section id="Contents">
-      <div className="container-xxxl border mt-2">
+      <div className="container-xxxl mt-2">
         {rows.map((row, rowIndex) => (
           <div className="row mb-3" key={rowIndex}>
             {row.map((video, index) => (

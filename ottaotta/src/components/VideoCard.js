@@ -7,7 +7,7 @@ function VideoCard({ video }) {
   }
 
   return (
-    <div className="card border-light" style={{ width: '100%', height: '300px' }}>
+    <div className="card border-light shadow" style={{ width: '100%', height: '300px' }}>
       <Link to={`/video/${encodeURIComponent(video.title)}`} className="nav-link" title={video.title}>
         <img src={video.imgSrc} className="card-img-top" alt={video.title} />
       </Link>

@@ -26,7 +26,7 @@ const UserNav = () => {
             </div>
 
             {/* Search bar */}
-            <div className="col-12 col-lg-6 mx-lg-auto my-2 my-lg-0">
+            <div className="col-12 col-lg-6 mx-lg-auto my-2 my-lg-0 shadow">
               <div className="input-group">
                 <input type="text" className="form-control" placeholder="Search across the channel" />
                 <button type="button" className="btn btn-primary">
@@ -38,10 +38,10 @@ const UserNav = () => {
             {/* Right side: toolkit for notices */}
             <ul className="navbar-nav d-flex align-items-center">
               <li className="nav-item">
-                <NavLink className="nav-link fs-5 me-4" to="/help"><i class="bi bi-question-circle-fill"></i></NavLink>
+                <NavLink className="nav-link fs-5 me-4" to="/help"><i class="bi bi-question-circle-fill" style={{ fontSize: '1.5rem' }}></i></NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link fs-5 me-4" to="/settings"><i class="bi bi-gear-fill"></i></NavLink>
+                <NavLink className="nav-link fs-5 me-4" to="/settings"><i class="bi bi-gear-fill" style={{ fontSize: '1.5rem' }}></i></NavLink>
               </li>
             </ul>
             <Link to="/user" className="nav-link p-0 me-1" title="user">

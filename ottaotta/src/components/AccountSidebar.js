@@ -18,6 +18,7 @@ const Sidebar = () => {
         <div className="align-items-center justify-content-center d-flex flex-column">
           <a href="../user/upload.html">
             <button className="btn btn-primary fs-5 mt-3 pd-4 shadow" type="button">
+            <i class="bi bi-upload me-2"></i>
               Upload your video
             </button>
           </a>
@@ -39,6 +40,7 @@ const Sidebar = () => {
               onClick={() => setActiveTab('My Videos')}
             >
               <i class="bi bi-play-btn-fill pe-3"></i>My Videos
+              
             </button>
           </li>
           <li>
@@ -55,7 +57,7 @@ const Sidebar = () => {
               onClick={() => setActiveTab('Messages')}
             >
               <i class="bi bi-chat-square-dots-fill pe-3"></i>Messages
-              <span className="badge bg-warning ms-5">4</span>
+              <span className="badge bg-danger ms-5">4</span>
               
             </button>
           </li>
@@ -64,7 +66,7 @@ const Sidebar = () => {
               className={`nav-link text-dark fw-bold mb-3 ${activeTab === 'Collection' ? 'active w-100 text-start shadow text-white' : ''}`}
               onClick={() => setActiveTab('Collection')}
             >
-              <i class="bi bi-collection-play-fill pe-3"></i>Collection
+              <i class="bi bi-bookmark-heart-fill pe-3"></i>Collection
             </button>
           </li>
           <li>
@@ -72,7 +74,7 @@ const Sidebar = () => {
               className={`nav-link text-dark fw-bold mb-3 ${activeTab === 'Playlist' ? 'active w-100 text-start shadow text-white' : ''}`}
               onClick={() => setActiveTab('Playlist')}
             >
-              <i class="bi bi-list-stars pe-3"></i>Playlist
+              <i class="bi bi-collection-play-fill pe-3"></i>Playlist
             </button>
           </li>
           <li>

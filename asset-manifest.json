@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/OttaOttaVideoSharingWeb/static/css/main.03fb8e1a.css",
-    "main.js": "/OttaOttaVideoSharingWeb/static/js/main.b511fef6.js",
+    "main.js": "/OttaOttaVideoSharingWeb/static/js/main.73132044.js",
     "static/js/453.d8159412.chunk.js": "/OttaOttaVideoSharingWeb/static/js/453.d8159412.chunk.js",
     "static/media/bootstrap-icons.woff?": "/OttaOttaVideoSharingWeb/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
     "static/media/bootstrap-icons.woff2?": "/OttaOttaVideoSharingWeb/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
@@ -10,11 +10,11 @@
     "static/media/destiny2.png": "/OttaOttaVideoSharingWeb/static/media/destiny2.b4eb9e8ed2ce59ad8875.png",
     "index.html": "/OttaOttaVideoSharingWeb/index.html",
     "main.03fb8e1a.css.map": "/OttaOttaVideoSharingWeb/static/css/main.03fb8e1a.css.map",
-    "main.b511fef6.js.map": "/OttaOttaVideoSharingWeb/static/js/main.b511fef6.js.map",
+    "main.73132044.js.map": "/OttaOttaVideoSharingWeb/static/js/main.73132044.js.map",
     "453.d8159412.chunk.js.map": "/OttaOttaVideoSharingWeb/static/js/453.d8159412.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.03fb8e1a.css",
-    "static/js/main.b511fef6.js"
+    "static/js/main.73132044.js"
   ]
 }
